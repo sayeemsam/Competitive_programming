@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int data[6]= {5,4,3,2,1};
+
+int i,x,ans;
+
+int main()
+{
+    cin >> x;
+
+    for(i=0; i<5; i++)
+    {
+        ans = ans + x/data[i];
+        x = x%data[i];
+    }
+
+    cout << ans;
+
+
+    return 0;
+}

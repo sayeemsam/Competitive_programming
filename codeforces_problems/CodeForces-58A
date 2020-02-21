@@ -1,0 +1,60 @@
+#include<bits/stdc++.h>
+using namespace std;
+string hello;
+
+int i,j,k,m,n,test=-1;
+
+int main()
+{
+    cin >> hello;
+
+    for(i=0; i<hello.size(); i++)
+    {
+        if(hello[i]=='h')
+        {
+            i++;
+            for(j=i; j<hello.size(); j++)
+            {
+                if(hello[j]=='e')
+                {
+                    j++;
+                    for(k=j; k<hello.size(); k++)
+                    {
+                        if(hello[k]=='l')
+                        {
+                            k++;
+                            for(m=k; m<hello.size(); m++)
+                            {
+                                if(hello[m]=='l')
+                                {
+                                    m++;
+                                    for(n=m; n<hello.size(); n++)
+                                    {
+                                        if(hello[n]=='o')
+                                        {
+                                            test=1;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if(test==1)
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }
+
+
+
+    return 0;
+}

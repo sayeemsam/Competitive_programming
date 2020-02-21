@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int i,M,N, P=2,ans;
+
+int main()
+{
+    cin >> M >> N;
+
+    ans = M*N/P;
+
+    cout << ans;
+
+    return 0;
+}
